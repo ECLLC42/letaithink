@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ onStartBuilding }) => {
 
     return () => {
       // Cleanup
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger?.getAll?.()?.forEach(trigger => trigger.kill());
     };
   }, []);
 
