@@ -1,0 +1,34 @@
+{
+  "roles": {
+    "orchestrator": {
+      "toolkits": [],
+      "approvalRequiredActions": ["delete", "rollback", "revoke", "external_post"]
+    },
+    "researcher": {
+      "toolkits": ["google"],
+      "approvalRequiredActions": []
+    },
+    "architect": {
+      "toolkits": [],
+      "approvalRequiredActions": []
+    },
+    "coder": {
+      "toolkits": ["github"],
+      "approvalRequiredActions": ["delete", "revoke"]
+    },
+    "qa": {
+      "toolkits": ["github"],
+      "approvalRequiredActions": []
+    },
+    "publisher": {
+      "toolkits": ["vercel", "render", "fly"],
+      "approvalRequiredActions": ["rollback", "delete"]
+    },
+    "marketer": {
+      "toolkits": ["google", "slack"],
+      "approvalRequiredActions": ["external_post"]
+    }
+  }
+}
+
+

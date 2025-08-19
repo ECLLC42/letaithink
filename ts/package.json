@@ -1,0 +1,27 @@
+{
+  "name": "letai-think",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "node --watch dist/index.js",
+    "demo": "node dist/demo.js",
+    "simple-test": "node dist/simple-test.js",
+    "full-test": "node dist/full-pipeline-test.js",
+    "server": "node dist/server.js",
+    "dev-server": "node --watch dist/server.js"
+  },
+  "dependencies": {
+    "@arcadeai/arcadejs": "1.9.0",
+    "@openai/agents": "0.0.16",
+    "cors": "^2.8.5",
+    "dotenv": "17.2.1",
+    "express": "^4.18.2",
+    "typescript": "5.9.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3"
+  }
+}

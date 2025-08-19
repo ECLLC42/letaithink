@@ -1,0 +1,14 @@
+{
+  "arcade_toolkits": ["github", "google", "slack", "vercel", "render", "fly"],
+  "internal_tools": [
+    "web_search",
+    "web_scrape",
+    "vector_search",
+    "repo_scaffolder",
+    "cost_meter",
+    "risk_pii_checks"
+  ]
+}
+
+
+

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://let-a-i-think.local/schemas/capabilities.schema.json",
+  "title": "CapabilitiesOntology",
+  "type": "object",
+  "properties": {
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "description", "subCapabilities"],
+        "properties": {
+          "key": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "subCapabilities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "name", "description"],
+              "properties": {
+                "key": { "type": "string" },
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "requiresConsent": { "type": "boolean", "default": false },
+                "toolkits": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["capabilities"]
+}
+
+
